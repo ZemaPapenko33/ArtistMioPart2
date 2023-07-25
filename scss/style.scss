@@ -1,6 +1,19 @@
 @import '_normalize';
 @import '_reset';
 
+@font-face {
+  font-family: 'myMetropolisBlack';
+  src: url('../fonts/Metropolis-Medium.otf');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'myMetropolisLight';
+  src: url('../fonts/Metropolis-Light.otf');
+  font-style: normal;
+  font-weight: 200;
+}
+
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -14,6 +27,7 @@
   max-width: 1620px;
   margin: auto;
   position: relative;
+  overflow: hidden;
 }
 .header {
   min-height: 150px;
@@ -35,6 +49,7 @@
     li {
       margin-right: 15px;
       font-size: 30px;
+      font-family: 'myMetropolisLight';
     }
     a:hover {
       color: #000e9f;
@@ -65,6 +80,7 @@
   &__title {
     transform: rotate(-90deg);
     font-size: 150px;
+    font-family: 'myMetropolisBlack';
   }
   &__line {
     transform: rotate(-90deg);
@@ -77,7 +93,7 @@
     width: 1000px;
     height: 1000px;
     position: absolute;
-    top: 750px;
+    top: 700px;
     left: 300px;
   }
 }
@@ -114,13 +130,14 @@
     height: 100%;
     font-size: 50px;
     color: white;
+    font-family: 'myMetropolisBlack';
   }
   &__logo {
     width: 400px;
     height: 400px;
     position: absolute;
     top: -145px;
-    right: -80px;
+    right: -3px;
   }
   &__about {
     width: 100%;
@@ -141,6 +158,7 @@
     padding-left: 30px;
     padding-right: 30px;
     font-size: 30px;
+    font-family: 'myMetropolisLight';
   }
   &__about-right {
     width: 50%;
@@ -149,10 +167,11 @@
     align-items: center;
     justify-content: center;
     color: white;
-    line-height: 35px;
+    line-height: 32px;
     padding-left: 30px;
     padding-right: 30px;
     font-size: 30px;
+    font-family: 'myMetropolisLight';
   }
 }
 .threeSection {
@@ -164,7 +183,7 @@
     height: 400px;
     position: absolute;
     top: -145px;
-    right: -80px;
+    right: -1px;
   }
   &__exhibitions-title {
     background-color: #000e9f;
@@ -175,6 +194,7 @@
     align-items: center;
     justify-content: center;
     font-size: 50px;
+    font-family: 'myMetropolisBlack';
   }
   &__line {
     transform: rotate(-90deg);
@@ -197,6 +217,7 @@
     top: 85px;
     left: 60%;
     font-size: 50px;
+    font-family: 'myMetropolisBlack';
   }
   &__personal {
     width: 100%;
@@ -221,6 +242,7 @@
     padding-right: 40px;
     font-size: 30px;
     line-height: 45px;
+    font-family: 'myMetropolisLight';
   }
   &__joint {
     width: 100%;
@@ -248,6 +270,7 @@
     padding-top: 40px;
     font-size: 30px;
     line-height: 45px;
+    font-family: 'myMetropolisLight';
     p {
       margin-bottom: 40px;
     }
@@ -285,6 +308,7 @@
     top: 40px;
     left: 60%;
     font-size: 50px;
+    font-family: 'myMetropolisBlack';
   }
   &__joint-year2 {
     color: #000e9f;
@@ -292,6 +316,7 @@
     top: 123px;
     left: 60%;
     font-size: 50px;
+    font-family: 'myMetropolisBlack';
   }
   &__joint-year3 {
     color: #000e9f;
@@ -299,6 +324,7 @@
     top: 210px;
     left: 60%;
     font-size: 50px;
+    font-family: 'myMetropolisBlack';
   }
 
   &__projects {
@@ -332,7 +358,8 @@
     padding-right: 40px;
     padding-top: 60px;
     font-size: 30px;
-    line-height: 45px;
+    line-height: 35px;
+    font-family: 'myMetropolisLight';
     p {
       margin-bottom: 60px;
     }
@@ -398,6 +425,7 @@
     top: 10px;
     left: 60%;
     font-size: 50px;
+    font-family: 'myMetropolisBlack';
   }
   &__projects-year2 {
     color: #000e9f;
@@ -405,6 +433,7 @@
     top: 115px;
     left: 60%;
     font-size: 50px;
+    font-family: 'myMetropolisBlack';
   }
   &__projects-year3 {
     color: #000e9f;
@@ -412,6 +441,7 @@
     top: 220px;
     left: 60%;
     font-size: 50px;
+    font-family: 'myMetropolisBlack';
   }
   &__projects-year4 {
     color: #000e9f;
@@ -419,6 +449,7 @@
     top: 325px;
     left: 60%;
     font-size: 50px;
+    font-family: 'myMetropolisBlack';
   }
   &__projects-year5 {
     color: #000e9f;
@@ -426,6 +457,7 @@
     top: 660px;
     left: 60%;
     font-size: 50px;
+    font-family: 'myMetropolisBlack';
   }
   &__projects-year6 {
     color: #000e9f;
@@ -433,6 +465,7 @@
     top: 810px;
     left: 60%;
     font-size: 50px;
+    font-family: 'myMetropolisBlack';
   }
 }
 .fourSection {
@@ -443,15 +476,17 @@
     margin-bottom: 40px;
   }
   &__title {
-    font-size: 45px;
+    font-size: 40px;
     margin-bottom: 10px;
     margin-left: 50px;
+    font-family: 'myMetropolisBlack';
   }
   &__subtitle {
     font-size: 25px;
     color: gray;
     margin-left: 50px;
     margin-bottom: 50px;
+    font-family: 'myMetropolisLight';
   }
   &__footer {
     display: flex;
@@ -470,5 +505,184 @@
     width: 30%;
     font-size: 40px;
     color: #000e9f;
+  }
+}
+.artSection {
+  &__container {
+    padding-top: 150px;
+  }
+  &__artbox {
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__artbox-left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-right: 20px;
+  }
+  &__artbox-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  &__artbox-left-img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 15px;
+  }
+  &__artbox-right-img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 15px;
+  }
+  &__title {
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-family: 'myMetropolisBlack';
+  }
+  &__subtitle {
+    font-size: 25px;
+    color: gray;
+    margin-bottom: 30px;
+    font-family: 'myMetropolisLight';
+  }
+  &__artbox2 {
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__img-title {
+    background-color: #000e9f;
+    color: white;
+    height: 50px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-family: 'myMetropolisBlack';
+    margin-bottom: 50px;
+    padding: 40px;
+  }
+  &__artBox2-img {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+  }
+  &__artbox3 {
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__artbox3-left {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__artbox3-left-img {
+    object-fit: contain;
+    width: 100%;
+  }
+  &__artbox3-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  &__artbox4 {
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  &__artbox4-img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
+  &__artbox4-left {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+  }
+  &__artbox4-right {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__artbox3-right-img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
+  &__artbox5 {
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__artbox5-left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  &__artbox5-left-img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
+  &__artbox5-right-img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
+  &__artbox5-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
   }
 }
