@@ -32,6 +32,9 @@
 .header {
   min-height: 150px;
 
+  &__container {
+    padding-top: 50px;
+  }
   &__navigation {
     display: flex;
     align-items: center;
@@ -490,7 +493,7 @@
     margin-bottom: 40px;
   }
   &__title {
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 10px;
     margin-left: 50px;
     font-family: 'myMetropolisBlack';
@@ -517,7 +520,7 @@
   }
   &__footer-title {
     width: 30%;
-    font-size: 40px;
+    font-size: 30px;
     color: #000e9f;
     font-family: 'myMetropolisBlack';
   }
@@ -574,12 +577,13 @@
     margin-bottom: 15px;
   }
   &__title {
-    font-size: 40px;
+    font-size: 20px;
     margin-bottom: 30px;
     font-family: 'myMetropolisBlack';
+    margin-top: 5%;
   }
   &__subtitle {
-    font-size: 25px;
+    font-size: 10px;
     color: gray;
     margin-bottom: 30px;
     font-family: 'myMetropolisLight';
@@ -645,7 +649,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 15px;
+    margin-bottom: 25%;
   }
   &__artbox4-img {
     object-fit: contain;
@@ -721,7 +725,7 @@
     margin-bottom: 40px;
   }
   &__SuperRare-title {
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 30px;
     margin-left: 50px;
     font-family: 'myMetropolisBlack';
@@ -753,7 +757,7 @@
     padding: 20px;
   }
   &__nftbox-left-title {
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 30px;
   }
   &__nftbox-left-video {
@@ -761,11 +765,12 @@
     margin-bottom: 30px;
   }
   &__nftbox-left-video-title {
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 30px;
   }
   &__nftbox-left-subtitle {
     color: gray;
+    font-size: 20px;
   }
   &__nftbox-right {
     width: 50%;
@@ -777,7 +782,7 @@
     font-family: 'myMetropolisBlack';
   }
   &__nftbox-right-title {
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 30px;
     color: white;
     user-select: none;
@@ -813,7 +818,7 @@
   }
   &__footer-title {
     color: white;
-    font-size: 40px;
+    font-size: 30px;
     font-family: 'myMetropolisBlack';
     margin-right: 50px;
   }
@@ -829,7 +834,7 @@
   }
   &__footer-subtitle {
     color: #000e9f;
-    font-size: 40px;
+    font-size: 30px;
     font-family: 'myMetropolisBlack';
     margin-left: 50px;
   }
@@ -895,7 +900,7 @@
     padding-right: 30px;
     color: #000e9f;
     font-family: 'myMetropolisBlack';
-    font-size: 40px;
+    font-size: 30px;
   }
   &__footer-line {
     height: 3px;
@@ -971,7 +976,7 @@
   &__footer-title {
     color: #000e9f;
     font-family: 'myMetropolisBlack';
-    font-size: 40px;
+    font-size: 30px;
   }
 }
 .lexusSection {
@@ -1002,7 +1007,7 @@
   }
   &__footer-title {
     width: 50%;
-    font-size: 40px;
+    font-size: 30px;
     color: #000e9f;
     font-family: 'myMetropolisBlack';
   }
@@ -1045,7 +1050,7 @@
   &__content-left-title {
     color: #000e9f;
     font-family: 'myMetropolisBlack';
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 30px;
   }
   &__content-left-text {
@@ -1152,7 +1157,7 @@
     justify-content: space-between;
     width: 100%;
     height: 50px;
-    font-size: 40px;
+    font-size: 30px;
     font-family: 'myMetropolisBlack';
     color: gray;
     padding: 50px;
@@ -1191,7 +1196,7 @@
   }
   &__content-left-title {
     color: white;
-    font-size: 40px;
+    font-size: 30px;
     font-family: 'myMetropolisBlack';
     transform: rotate(270deg);
     line-height: 50px;
@@ -1217,7 +1222,7 @@
   }
   &__footer-title {
     color: #000e9f;
-    font-size: 40px;
+    font-size: 30px;
     font-family: 'myMetropolisBlack';
   }
 }
@@ -1286,6 +1291,47 @@
     left: 50%;
     margin-top: -300px;
   }
+  &__socialMedia {
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  &__social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 30px;
+    a {
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+    }
+  }
+  &__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  &__social-icon {
+    object-fit: contain;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+  }
+  &__social-title {
+    color: white;
+    font-size: 25px;
+    font-family: 'myMetropolisLight';
+  }
   &__footer {
     display: flex;
     align-items: center;
@@ -1299,10 +1345,28 @@
     background-color: white;
   }
   &__footer-title {
-    font-size: 40px;
+    font-size: 30px;
     color: white;
     font-family: 'myMetropolisBlack';
     margin-right: 30px;
     margin-left: 30px;
+  }
+  &__icon-up {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__icon-up-img {
+    object-fit: contain;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+  }
+  &__icon-down {
+    color: white;
+    font-family: 'myMetropolisLight';
+    font-size: 30px;
   }
 }
